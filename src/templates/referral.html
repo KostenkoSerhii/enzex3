@@ -1,0 +1,50 @@
+---
+title: terms page
+outClass: ''
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "partials/_header.html" %}
+<!--begin content-wrapper-->
+<div class="content-wrapper referral-page" >
+	<!--begin l-->
+	<div class="l">
+		<h1 class="title referral-page__title">Referral program</h1>
+		<!--begin referraltwo-col-->
+		<div class="reftwo-col">
+			<!--begin reftwo-col__img-->
+			<div class="reftwo-col__img">
+				<img src="img/earth.png" alt="alt">
+			</div>
+			<!--end reftwo-col__img-->
+			<!--begin reftwo-col__descr-->
+			<div class="reftwo-col__descr">
+				<div class="text-block" style="background-image: url('img/bg-texture.jpg');">
+					<p>
+						To earn in our affiliate program you don`t even need an active investment, 
+						we will credit the 5% commission to your account after you bring and 
+						attract new clients by sharing your referral link with others it means once 
+						someone registered through your referral link he becomes your direct 
+						referral. You can also use our banners for advertising in your account click 
+						"promotion tools" .
+					</p>
+					<p>
+						Our referral program has only one level it means that you will receive 
+						the commission only from your direct referrals but not from partners of 
+						your referrals. You are able to withdraw you affiliate commission after it 
+						reached to 0.001 BTC.
+					</p>
+				</div>
+			</div>
+			<!--end reftwo-col__descr-->
+		</div>
+		<!--end referraltwo-col-->
+	</div>
+	<!--end l-->
+</div>
+<!--end two-col-->
+</div>
+<!--end content-wrapper-->
+{% include "partials/_footer.html" %}
+{% endblock %}

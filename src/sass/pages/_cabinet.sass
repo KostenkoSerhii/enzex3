@@ -1,0 +1,159 @@
+.cab-page
+	&__inner
+		+clr
+	&__nav
+		float: left
+		width: 200px
+		padding-top: 11px
+		+lg
+			width: 180px
+		+m
+			padding-top: 0
+			float: none
+			width: 100%
+			text-align: center
+			margin-bottom: 10px
+		a
+			display: block
+			+trans
+			margin-bottom: 25px
+			position: relative
+			padding-right: 10px
+			&:after
+				content: ''
+				position: absolute
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
+				+arr(10,22,$blue,l)
+				display: none
+			&:hover
+				color: $red
+				span
+					border-color: rgba($red, 0.4)
+			&.is-active
+				+m
+					color: $red
+					span
+						border-color: rgba($red, 0.4)
+				&:after
+					display: block
+					+m
+						display: none
+			+m
+				display: inline-block
+				vertical-align: top
+				margin: 10px
+			span
+				border-bottom: 1px dashed rgba($blue, 0.4)
+				+trans
+	&__content
+		float: right
+		width: calc(100% - 200px)
+		+lg
+			width: calc(100% - 180px)
+		+m
+			float: none
+			width: 100%
+.cab-content
+	background: $white
+	border: 10px solid $blue
+	padding: 20px 30px
+	+m
+		border: 4px solid $blue
+		padding: 8px 12px 14px
+	&__top-info-line
+		display: flex
+		justify-content: space-between
+		margin-bottom: 54px
+		+lg
+			font-size: 14px
+		+m
+			margin-bottom: 15px
+			display: block
+			text-align: center
+		strong
+			+rob
+		span
+			+m
+				display: inline-block
+				vertical-align: top
+				margin: 10px
+	&__title-block
+		font-size: 24px
+		color: $white
+		+rob
+		background: $blue2
+		padding: 7px 15px
+		line-height: 1.1
+		margin-bottom: 10px
+		letter-spacing: 2.5px
+		+m
+			font-size: 18px
+			text-align: left
+		&--bg-l
+			background: $blue1
+	&__text-big
+		font-size: 32px
+		line-height: 1.1
+		font-weight: 700
+		+rob
+		+m
+			font-size: 20px
+	&__block
+		&--mb
+			margin-bottom: 32px
+			+m
+				margin-bottom: 20px
+	&__justify
+		display: flex
+		justify-content: space-between
+		+lg
+			font-size: 14px
+		+m
+			display: block
+			text-align: center
+		span
+			+m
+				display: inline-block
+				vertical-align: top
+				margin: 10px
+.cabtwo-col
+	+clr
+	margin-bottom: 55px
+	+m
+		margin-bottom: 20px
+	&__left, &__right
+		+xs
+			float: none
+			width: 100%
+			padding: 0
+			text-align: center
+	&__left
+		padding-right: 15px
+		float: left
+		width: 50%
+		+xs
+			margin-bottom: 20px
+	&__right
+		float: right
+		width: 50%
+		padding-left: 15px
+.cabtwo-col-btn
+	+clr
+	&__left
+		float: left
+		width: calc(100% - 160px)
+		+m
+			float: none
+			width: 100%
+			margin-bottom: 15px
+	&__right
+		float: right
+		text-align: right
+		width: 160px
+		+m
+			float: none
+			width: 100%
+			text-align: center
+

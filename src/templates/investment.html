@@ -1,0 +1,58 @@
+---
+title: investment page
+outClass: ''
+parallax: false
+investTitleWhite: false
+plans: [
+{
+	topline: 'STARTER',
+	toplinemod: 'plan-block__topline--l',
+	perc: '3.6%',
+	aftperc: 'Dialy',
+	hourly: '0.15% Hourly',
+	min: 'Min: <strong>0.005</strong>',
+	max: 'Max: <strong>10.00</strong>',
+	bottext: 'Instant  withdrawal'
+},
+{
+	topline: 'MEDIUM',
+	toplinemod: 'plan-block__topline--m',
+	perc: '4.08%',
+	aftperc: 'Dialy',
+	hourly: '0.17% Hourly',
+	min: 'Min: <strong>10.005</strong>',
+	max: 'Max: <strong>50.00</strong>',
+	bottext: 'Instant  withdrawal'
+},
+{
+	topline: 'PREMIUM',
+	toplinemod: 'plan-block__topline--d',
+	perc: '5.04%',
+	aftperc: 'Dialy',
+	hourly: '0.21% Hourly',
+	min: 'Min: <strong>50.005</strong>',
+	max: 'Max: <strong>100.00</strong>',
+	bottext: 'Instant  withdrawal',
+	class: 'plan-block--last'
+}
+]
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "partials/_header.html" %}
+<!--begin content-wrapper-->
+<div class="content-wrapper" style="background-image: url('img/bg-texture-full.jpg');">
+	<!--begin container-->
+	<div class="container" >
+		
+		{% include "partials/_invest-plans.html" %}
+		{% include "partials/_cacl-block.html" %}
+
+	</div>
+	<!--end container-->
+
+</div>
+<!--end content-wrapper-->
+{% include "partials/_footer.html" %}
+{% endblock %}

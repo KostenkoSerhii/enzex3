@@ -1,0 +1,212 @@
+.hero
+	min-height: 550px
+	padding-top: 139px
+	+cover
+	+m
+		min-height: auto
+		padding: 30px 0
+	&__title
+		margin-bottom: 50px
+.welcome
+	+cover
+	padding-top: 22px
+	padding-bottom: 47px
+	+m
+		padding-bottom: 25px
+	&__inner
+		+clr
+	&__title
+		margin-bottom: 25px
+	&__text
+		max-width: 730px
+		float: left
+		+m
+			max-width: 100%
+		p
+			margin-bottom: 25px
+			line-height: 1.5
+	&__img
+		float: right
+		width: calc(100% - 770px)
+		+m
+			display: none
+		&-wrapper
+			max-width: 301px
+			display: inline-block
+			vertical-align: top
+		img
+			height: 100%
+			width: 100%
+			object-fit: contain
+.inv-plans
+	padding-top: 15px
+	padding-bottom: 30px
+	+m
+		padding-bottom: 10px
+	&--bg-mob
+		+m
+			background: $bg-blue
+	&__title
+		margin-bottom: 54px
+		+m
+			margin-bottom: 25px
+	&__inner
+		text-align: center
+		font-size: 0
+.plan-block
+	width: 230px
+	background: $white
+	text-align: center
+	display: inline-block
+	vertical-align: top
+	line-height: 1
+	padding-bottom: 17px
+	margin-right: 170px
+	+lg
+		margin-right: 100px
+	+m
+		display: block
+		margin-bottom: 20px
+		margin-left: auto
+		margin-right: auto
+	&--last
+		margin-right: 0
+		+lg
+			margin-right: 0
+		+m
+			margin-right: auto
+	&__topline
+		font-size: 24px
+		+rob
+		color: $white
+		padding: 12px 0 12px
+		margin-bottom: 10px
+		&--l
+			background: $blue1
+		&--m
+			background: $blue2
+		&--d
+			background: $blue
+	&__perc
+		font-size: 72px
+		+rob
+		color: $black
+		margin-bottom: 7px
+		font-weight: 700
+		+m
+			font-size: 54px
+	&__after-perc
+		+rob
+		color: $black
+		font-size: 32px
+		font-weight: 700
+		margin-bottom: 16px
+	&__hourly
+		+rob
+		font-size: 15px
+		opacity: 0.5
+		margin-bottom: 20px
+	&__min, &__max
+		font-size: 18px
+		margin-bottom: 18px
+		strong
+			font-weight: 500
+	&__bottom-text
+		font-weight: 700
+		font-size: 18px
+.calc-block
+	padding-top: 40px
+	+m
+		padding-top: 20px
+	&__title
+		margin-bottom: 23px
+.calc-wrapper
+	background-color: $bg-blue
+	border: 10px solid $blue
+	padding: 31px 60px 50px
+	display: flex
+	justify-content: space-between
+	+lg
+		padding: 31px 30px 50px
+	+m
+		display: block
+		padding: 15px 15px 15px
+		border: 4px solid $blue
+	.field
+		margin-bottom: 0
+		+m
+			margin-bottom: 15px
+		input
+			text-align: center
+.maximize-block
+	padding-top: 36px
+	padding-bottom: 57px
+	+m
+		text-align: center
+		padding-top: 25px
+		padding-bottom: 25px
+	&__img
+		margin-top: 12px
+		width: 100%
+		+m
+			display: none
+		img
+			+lg
+				width: 500px
+				height: auto
+	&__right
+		padding-left: 85px
+		+m
+			padding-left: 0
+	&__title
+		margin-bottom: 15px
+		text-align: left
+		+m
+			text-align: center
+	&__text
+		margin-bottom: 26px
+		p
+			margin-bottom: 8px
+	.two-col__left
+		+m
+			display: none
+.descr-blocks
+	background: $bg-blue
+	padding-top: 28px
+	padding-bottom: 23px
+	text-align: center
+	+m
+		padding-bottom: 15px
+.descr-block
+	display: inline-block
+	vertical-align: top
+	width: 33%
+	text-align: center
+	padding-left: 10px
+	padding-right: 10px
+	+m
+		display: block
+		margin-left: auto
+		margin-right: auto
+		width: 100%
+		margin-bottom: 20px
+	&__img
+		height: 170px
+		margin-bottom: 16px
+		+vertical
+		+m
+			height: 100px
+		img
+			max-height: 170px
+			max-width: 250px
+			display: inline-block
+			vertical-align: middle
+			+m
+				max-height: 100px
+	&__title
+		font-size: 32px
+		font-weight: 700
+		margin-bottom: 7px
+		+rob
+		+m
+			font-size: 18px

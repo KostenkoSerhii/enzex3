@@ -1,0 +1,80 @@
+---
+title: how-it-work page
+outClass: ''
+scheme: [
+{
+	class: 'create-acc js-scheme-create-acc',
+	text: 'Create new <br> account',
+	img: 'img/cursor.png',
+	arrow: 'img/arow-dash-1.png'
+},
+{
+	class: 'deposit js-scheme-deposit',
+	text: 'Make your <br> deposit',
+	img: 'img/cub.png',
+	arrow: 'img/arow-dash-2.png'
+},
+{
+	class: 'profit js-scheme-profit',
+	text: 'Get a daily <br> profit',
+	img: 'img/token-blink.png',
+	arrow: 'img/arow-dash-3.png'
+},
+{
+	class: 'referall js-scheme-referall',
+	text: 'You will earn 5% <br> referral comission',
+	img: 'img/tokens.png',
+	arrow: 'img/arow-dash-5.png'
+},
+{
+	class: 'share js-scheme-share',
+	text: 'Share your <br> referral link',
+	img: 'img/share.png',
+	arrow: 'img/arow-dash-4.png'
+},
+{
+	class: 'graph js-scheme-graph',
+	text: 'Enjoy the profit all the time',
+	img: 'img/graph.png'
+}
+]
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "partials/_header.html" %}
+<!--begin content-wrapper-->
+<div class="content-wrapper how-work-page" style="background-image: url('img/bg-texture-full.jpg');">
+	<!--begin container container--spec-->
+	<div class="container container--spec" >
+		<!--begin l-->
+		<div class="l">
+			<h1 class="title title--mb">How it works</h1>
+			<!--begin scheme-->
+			<div class="scheme js-scheme">
+				{% for test in scheme %}
+				<div class="scheme-block {{test.class}}">
+					<div class="scheme-block__inner">
+						<div class="scheme-block__text">{{test.text | safe}}</div>
+						<img class="scheme-block__img"  src="{{test.img}}" alt="alt">
+						{% if test.arrow %}
+						<img class="scheme-block__arrow js-scheme-arrow" src="{{test.arrow}}" alt="alt" >
+						<i class="scheme-block__mob-arrow">
+							{{mixins.icon('arrow-d2')}}
+						</i>
+						{% endif %}
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<!--end scheme-->
+		</div>
+		<!--end l-->
+	</div>
+	<!--end container container--spec-->
+
+</div>
+<!--end content-wrapper-->
+{% include "partials/_footer.html" %}
+{% endblock %}

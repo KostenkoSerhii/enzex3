@@ -1,0 +1,107 @@
+---
+title: cabinet page
+outClass: ''
+btnLogText: 'Logout'
+btnDasboardText: 'Dashboard'
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "partials/_header.html" %}
+<!--begin content-wrapper-->
+<div class="content-wrapper  cab-page" style="background-image: url('img/bg-texture-full.jpg');">
+	<!--begin container-->
+	<div class="container container--pt-36 " >
+		<!--begin l-->
+		<div class="l">
+			<h1 class="title title--mb-md">Account overview</h1>
+			<!--begin cab-page__inner-->
+			<div class="cab-page__inner">
+				<!--begin cab-page__nav-->
+				<nav class="cab-page__nav">
+					<a class="is-active" href="#"><span>Account Overview</span></a>
+					<a href="#"><span>Make Deposit</span></a>
+					<a href="#"><span>Withdraw Fund</span></a>
+					<a href="#"><span>Deposit List</span></a>
+					<a href="#"><span>Deposit History</span></a>
+					<a href="#"><span>Earning History</span></a>
+					<a href="#"><span>Referral</span></a>
+					<a href="#"><span>Account Setting</span></a>
+					<a href="#"><span>Security Setting</span></a>
+				</nav>
+				<!--end cab-page__nav-->
+				<!--begin cab-content-->
+				<div class="cab-page__content cab-content">
+					<div class="cab-content__top-info-line">
+						<span>Username: <strong>Terminator228</strong></span>
+						<span>Registration date: <strong>Dec-11-2017</strong></span>
+						<span>Last visit: <strong>Dec-11-2017</strong></span>
+					</div>
+					<!--begin cabtwo-col-->
+					<div class="cabtwo-col">
+						<div class="cabtwo-col__left">
+							<div class="cab-content__title-block cab-content__title-block--bg-l">ACCOUNT BALANCE</div>
+							<p class="cab-content__text-big">4.456220000 BTC</p>
+						</div>
+						<div class="cabtwo-col__right">
+							<div class="cab-content__title-block">EARNING TOTAL</div>
+							<p class="cab-content__text-big">6.436780000 BTC</p>
+						</div>
+					</div>
+					<!--end cabtwo-col-->
+					<!--begin cab-content__block-->
+					<div class="cab-content__block cab-content__block--mb">
+						<!--begin cabtwo-col-btn-->
+						<div class="cabtwo-col-btn">
+							<div class="cabtwo-col-btn__left">
+								<div class="cab-content__title-block">DEPOSIT</div>
+								<p class="cab-content__justify">
+									<span>Total: <strong>2.0234153000 BTC</strong></span>
+									<span>Active: <strong>2.0234153000 BTC</strong></span>
+									<span>Last: <strong>2.0234153000 BTC</strong></span>
+								</p>
+							</div>
+							<div class="cabtwo-col-btn__right">
+								<button  class="btn btn--sm-it btn--red  ">Deposit now</button>
+							</div>
+						</div>
+						<!--end cabtwo-col-btn-->
+					</div>
+					<!--end cab-content__block-->
+					<!--begin cab-content__block-->
+					<div class="cab-content__block">
+						<!--begin cabtwo-col-btn-->
+						<div class="cabtwo-col-btn">
+							<div class="cabtwo-col-btn__left">
+								<div class="cab-content__title-block">WITHDRAW</div>
+								<p class="cab-content__justify">
+									<span>Total: <strong>2.0234153000 BTC</strong></span>
+									<span>Pending: <strong>2.0234153000 BTC</strong></span>
+									<span>Last: <strong>2.0234153000 BTC</strong></span>
+								</p>
+							</div>
+							<div class="cabtwo-col-btn__right">
+								<button  class="btn btn--sm-it btn--red ">Withdraw now</button>
+							</div>
+						</div>
+						<!--end cabtwo-col-btn-->
+					</div>
+					<!--end cab-content__block-->
+
+
+
+
+
+
+				</div>
+				<!--end cab-page__content-->
+			</div>
+			<!--end cab-page__inner-->
+		</div>
+		<!--end l-->
+	</div>
+	<!--end container-->
+</div>
+<!--end content-wrapper-->
+{% include "partials/_footer.html" %}
+{% endblock %}

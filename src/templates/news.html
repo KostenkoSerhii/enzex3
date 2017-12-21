@@ -1,0 +1,81 @@
+---
+title: terms page
+outClass: ''
+news: [
+{
+	title: 'Follow us on facebook',
+	date: '(Nov-28-2017 11:06 pm)',
+	text: '
+	<p>We are happy to announce our Facebook page!</p>
+	<p>Now you can communicate and read our updates there, our team is working hard to improve your comfort.</p>
+	<p>Best Regards, VerumBtc Team.</p>
+	'
+},
+{
+	title: 'Grand opening',
+	date: '(Nov-24-2017 10:06 am)',
+	text: '
+	<p>After long time preparations and hard work we are finally ready to announce our easy and user friendly website to wide audience.</p>
+	<p>Our site is available and the URL is <a href="#">https://verumbtc.com</a></p>
+	<p>For those who want to learn more about our platform you can read about our activities and investment opportunities in our home page.</p>
+	<p>If you need any additional information do not hesitate to contact our support department.</p>
+	'
+},
+{
+	title: 'Follow us on facebook',
+	date: '(Nov-28-2017 11:06 pm)',
+	text: '
+	<p>We are happy to announce our Facebook page!</p>
+	<p>Now you can communicate and read our updates there, our team is working hard to improve your comfort.</p>
+	<p>Best Regards, VerumBtc Team.</p>
+	'
+},
+{
+	title: 'Grand opening',
+	date: '(Nov-24-2017 10:06 am)',
+	text: '
+	<p>After long time preparations and hard work we are finally ready to announce our easy and user friendly website to wide audience.</p>
+	<p>Our site is available and the URL is <a href="#">https://verumbtc.com</a></p>
+	<p>For those who want to learn more about our platform you can read about our activities and investment opportunities in our home page.</p>
+	<p>If you need any additional information do not hesitate to contact our support department.</p>
+	'
+}
+]
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "partials/_header.html" %}
+<!--begin content-wrapper-->
+<div class="content-wrapper  news-page" style="background-image: url('img/bg-texture-full.jpg');">
+	<!--begin container-->
+	<div class="container container--pt-36" >
+		<!--begin l-->
+		<div class="l">
+			<h1 class="title news-page__title">News</h1>
+			<!--begin article-->
+			{% for test in news %}
+			<!--begin news-->
+			<div class="news">
+				<a class="news__title" href="#">
+					<strong>{{test.title}}</strong>
+					<span class="news__text-it">{{test.date}}</span>
+
+				</a>
+				<div class="news__text">
+					<p>
+						{{test.text | safe}}
+					</p>
+				</div>
+			</div>
+			<!--end news-->
+
+			{% endfor %}
+		</div>
+		<!--end l-->
+	</div>
+	<!--end container-->
+</div>
+<!--end content-wrapper-->
+{% include "partials/_footer.html" %}
+{% endblock %}

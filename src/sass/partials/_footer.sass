@@ -1,0 +1,75 @@
+.footer
+	background: $blue
+	padding-bottom: 8px
+	&__menu-wrapper
+		background: $white
+	&__menu
+		padding: 23px 59px
+		display: flex
+		justify-content: space-between
+		+m
+			display: block
+			padding: 10px 0
+			text-align: center
+		li
+			+m
+				display: inline-block
+				vertical-align: top
+			&.is-active
+				a
+					color: $red
+					&:after
+						background:  rgba($red, 0.4)
+		a
+			display: inline-block
+			vertical-align: top
+			color: $blue-l
+			+rob
+			+trans
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				bottom: 2px
+				left: 0
+				width: 100%
+				height: 1px
+				background:  rgba($blue-l, 0.2)
+				+trans
+			&:hover
+				color: $red
+				&:after
+					background:  rgba($red, 0.4)
+			+m
+				margin: 5px
+	&__info
+		padding-top: 14px
+		display: flex
+		justify-content: space-between
+		color: $white
+		padding-bottom: 11px
+		border-bottom: 1px solid rgba($white, 0.5)
+		margin-bottom: 12px
+		+m
+			display: block
+			text-align: center
+	&__logo
+		margin-top: 6px
+		display: block
+		+m
+			margin-bottom: 10px
+	&__address
+		+m
+			margin-bottom: 10px
+	&__phone
+		padding-right: 25px
+		+m
+			padding-right: 0
+		a
+			color: $white
+	&__copy
+		color: $white
+		font-size: 15px
+		+m
+			text-align: center
+			font-size: 14px

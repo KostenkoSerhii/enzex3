@@ -1,0 +1,25 @@
+ProjectTitle: enzex-btc
+
+PageList:
+- file: page.html
+  ready: 50%
+- file: how-it-work.html
+  ready: 50%
+- file: investment.html
+  ready: 50%
+- file: about.html
+  ready: 50%
+- file: terms.html
+  ready: 50%
+- file: referral.html
+  ready: 50%
+- file: buy.html
+  ready: 50%
+- file: faq-page.html
+  ready: 50%
+- file: news.html
+  ready: 50%
+- file: support.html
+  ready: 50%
+- file: cabinet.html
+  ready: 50%

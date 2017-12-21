@@ -1,0 +1,83 @@
+---
+title: buy page
+outClass: ''
+plate: [
+{
+	img: 'bitfinex'
+},
+{
+	img: 'coincheck'
+},
+{
+	img: 'bitcoin_de'
+},
+{
+	img: 'coinsbank'
+},
+{
+	img: 'localbitcoins'
+},
+{
+	img: 'coinbase'
+},
+{
+	img: 'coinify'
+},
+{
+	img: 'bitstampnew'
+},
+{
+	img: 'bitso'
+},
+{
+	img: 'gdax'
+},
+{
+	img: 'hitbtc'
+},
+{
+	img: 'bittrex'
+}
+]
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "partials/_header.html" %}
+<!--begin content-wrapper-->
+<div class="content-wrapper" style="background-image: url('img/bg-texture-full.jpg');">
+	<!--begin buy-wrapper-->
+	<div class="buy-wrapper">
+		<!--begin l-->
+		<div class="l">
+			<h1 class="title buy-wrapper__title">Buy bitcoins</h1>
+			<!--begin buy-wrapper__text-->
+			<div class="buy-wrapper__text">
+				<p>
+					You liked our program but you haven't Bitcoins? It's not a problem!
+					In the World Wide Web there are many services for buying Bitcoins.
+					Some of them you can see here.
+				</p>
+			</div>
+			<!--end buy-wrapper__text-->
+			<!--begin plate-->
+			<div class="plate">
+				{% for test in plate %}
+				<a class="plate-item" href="#">
+					<img src="img/{{test.img}}.png" alt="alt">
+				</a>
+				{% endfor %}
+			</div>
+			<!--end plate-->
+
+		</div>
+		<!--end l-->
+	</div>
+	<!--end buy-wrapper-->
+
+
+
+</div>
+<!--end content-wrapper-->
+{% include "partials/_footer.html" %}
+{% endblock %}

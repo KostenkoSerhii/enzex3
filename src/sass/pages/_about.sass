@@ -1,0 +1,33 @@
+.map-block
+	padding-top: 31px
+	margin-bottom: 45px
+	+m
+		margin-bottom: 25px
+.mtwo-col
+	+clr
+	margin-bottom: 35px
+	&__left, &__right
+		+m
+			float: none
+			width: 100%
+			padding: 0
+			text-align: center
+	&__left
+		float: left
+		width: 370px
+		text-align: right
+		margin-bottom: 15px
+	&__right
+		float: right
+		width: calc(100% - 370px)
+		padding-left: 50px
+.border-block
+	border: 10px solid $blue
+	+m
+		border: 4px solid $blue
+.gmap
+	height: 380px
+	+m
+		height: 300px
+	+xs
+		height: 200px

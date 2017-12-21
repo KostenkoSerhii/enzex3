@@ -1,0 +1,74 @@
+---
+title: support page
+outClass: ''
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "partials/_header.html" %}
+<!--begin content-wrapper-->
+<div class="content-wrapper  support-page" style="background-image: url('img/bg-texture-full.jpg');">
+	<!--begin container-->
+	<div class="container container--pt-36 container--pb-non" >
+		<!--begin l-->
+		<div class="l">
+			<h1 class="title support-page__title">Support</h1>
+			<h2 class="title title--md">
+				Enzex BTC Limited
+			</h2>
+			<!--begin two-col-->
+			<div class="two-col">
+				<!--begin two-col__left-->
+				<div class="two-col__left">
+					<!--begin support-page__info-->
+					<div class="support-page__info">
+						<p class="mb">Company number: 10836330</p>
+						<p class="mb">
+							Registered office address: <br>
+							52 Pump Lane, Hayes, <br>
+							United Kingdom, UB3 3NT
+						</p>
+						<p class="mb mb--big">E-mail: <a class="link" href="mailto:support@verumbtc.com">support@verumbtc.com</a></p>
+						<h2 class="title title--md title--mb-non title--left">Registered UK Company</h2>
+					</div>
+					<!--end support-page__info-->
+				</div>
+				<!--end two-col__left-->
+				<!--begin two-col__right-->
+				<div class="two-col__right">
+					<div class="form form--mb">
+						<form action="">
+							<p class="form__text">
+								Do not hesitate to contact us in support form or via e-mail.
+								Our advanced support team works 24/7 around the clock.
+							</p>
+							<div class="field field--470">
+								<p class="field__title">Username</p>
+								<input type="text" value="Terminator228">
+							</div>
+							<div class="field field--470">
+								<p class="field__title">E-mail</p>
+								<input type="text" value="leemoore88@yandex.com">
+							</div>
+							<div class="field field--mb-50 field--470">
+								<p class="field__title">Message</p>
+								<textarea placeholder="leemoore88@yandex.com"></textarea>
+							</div>
+							<div class="centered-mob">
+								<button type="submit"  class="btn btn--red btn--i ">Send</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--end two-col__right-->
+			</div>
+			<!--end two-col-->
+		</div>
+		<!--end l-->
+	</div>
+	<!--end container-->
+</div>
+<!--end content-wrapper-->
+{% include "partials/_footer.html" %}
+{% endblock %}

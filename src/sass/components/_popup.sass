@@ -1,0 +1,145 @@
+.popup
+	z-index: 10
+	position: fixed
+	top: 0
+	left: 0
+	min-height: 100vh
+	width: 100vw
+	display: none
+	&__overlay
+		height: 100vh
+		width: 100%
+		padding-top: 5%
+		background: rgba(#000, 0.3)
+		overflow-y: auto
+		+m
+			padding-top: 0
+		+r700
+			padding-top: 3%
+	&__content
+		margin-left: auto
+		margin-right: auto
+		background: $bg-blue
+		border: 10px solid $blue
+		padding: 15px 90px 30px 90px
+		position: relative
+		+m
+			margin: 0% auto
+			padding: 30px 10px 20px 10px
+			max-width: 100%
+			text-align: center
+			min-height: 100%
+		&--430
+			max-width: 430px
+		&--570
+			max-width: 570px
+		&--1030
+			max-width: 1030px
+			padding: 15px 17px 30px 17px
+		&--pad-40
+			padding-left: 40px
+			padding-right: 40px
+	&__title
+		text-align: center
+		font-size: 32px
+		+rob
+		margin-bottom: 20px
+		&--bold
+			font-weight: 700
+	&__link-line
+		margin-bottom: 35px
+
+	&__text
+		p
+			margin-bottom: 15px
+		&--mb
+			margin-bottom: 35px
+	&__text-spec
+		+rob
+		text-align: center
+		p
+			display: inline
+			border-bottom: 8px solid $red
+			line-height: 0.5
+	&__centered
+		text-align: center
+		line-height: 1.6
+		&--mb
+			margin-bottom: 40px
+		// .check__icon
+		// 	top: 5px
+		// 	svg
+		// 		top: -4px
+	&__two-col
+		font-size: 0
+		.field
+			padding-right: 15px
+			+m
+				padding-right: 0
+			&:nth-of-type(2n)
+				padding-left: 15px
+				padding-right: 0
+				+m
+					padding-left: 0
+	&__close-btn
+		position: absolute
+		right: 10px
+		top: 10px
+		width: 16px
+		height: 16px
+		cursor: pointer
+		z-index: 11
+		// +m
+		// 	position: relative
+		// 	right: 0
+		// 	top: 0
+		// 	margin-left: auto
+		// 	margin-bottom: 25px
+		&:before
+			content: ''
+			position: absolute
+			top: -5px
+			right: -5px
+			bottom: -5px
+			left: -5px
+		// &:after
+		// 	content: 'close'
+		// 	position: absolute
+		// 	font-size: 14px
+		// 	color: #b0b0b0
+		// 	top: 50%
+		// 	transform: translateY(-50%)
+		// 	left: -42px
+		// 	display: none
+		// 	+m
+		// 		display: block
+		i
+			display: block
+			position: absolute
+			width: 2px
+			height: 20px
+			background:  $blue
+			top: 0
+			+trans
+			&:first-of-type
+				transform-origin: 0 0
+				left: 0
+				transform: rotate(-45deg)
+			&:last-of-type
+				transform-origin: 100% 0
+				right: 0
+				transform: rotate(45deg)
+	.field
+		&:not(.field--mb-non)
+			+r700
+				margin-bottom: 15px
+		&__title
+			+r700
+				font-size: 16px
+		input
+			+r700
+				font-size: 20px
+				padding: 7px 15px
+
+
+	

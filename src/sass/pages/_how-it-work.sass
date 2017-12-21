@@ -1,0 +1,158 @@
+.how-work-page
+	.full-texture-bg
+		padding-top: 40px
+		padding-bottom: 9px
+		+m
+			padding-top: 20px
+.scheme
+	margin-left: auto
+	margin-right: auto
+	width: 1146px
+	position: relative
+	font-size: 0
+	overflow: hidden
+	+lg
+		width: 950px
+	+m
+		width: 100%
+.scheme-block
+	position: relative
+	font-size: 0
+	display: inline-block
+	vertical-align: top
+	opacity: 0
+	+lg
+		opacity: 1
+	+m
+		display: block
+	&__text
+		text-align: center
+		display: inline-block
+		vertical-align: top
+		+rob
+		font-size: 24px
+		font-weight: 700
+		line-height: 1.1
+		+m
+			font-size: 14px
+			display: block
+			margin-bottom: 15px
+	&__img
+		position: absolute
+		+m
+			max-width: 200px
+			height: auto
+			max-height: 200px
+			position: static
+	&__arrow
+		position: absolute
+		opacity: 0
+		+lg
+			opacity: 1
+		+m
+			display: none
+	&__mob-arrow
+		display: none
+		+m
+			display: block
+			margin-top: 25px
+			svg
+				font-size: 20px
+				fill: $blue
+	&__inner
+		display: inline-block
+		vertical-align: top
+		position: relative
+		br
+			+m
+				display: none
+	&.create-acc, &.deposit, &.profit, &.share, &.referall, &.graph
+		+m
+			padding: 0
+			margin: 0
+			position: static
+			text-align: center
+			margin-bottom: 25px
+	&.create-acc
+		padding-left: 55px
+		margin-right: 338px
+		margin-bottom: 111px
+		+lg
+			padding-left: 0
+			margin-right: 270px
+			margin-bottom: 76px
+		.scheme-block__img
+			top: 48%
+			left: 95%
+		.scheme-block__arrow
+			top: 33%
+			transform: translateY(-50%)
+			left: 133%
+			+lg
+				width: 200px
+				top: 58%
+	&.deposit
+		.scheme-block__img
+			left: 89%
+			top: 37%
+		.scheme-block__arrow
+			top: 50%
+			left: 256px
+			+lg
+				width: 240px
+				left: 246px
+	&.profit
+		display: block
+		margin-left: auto
+		text-align: right
+		margin-bottom: 90px
+		.scheme-block__inner
+			margin-right: 88px
+			+m
+				margin: 0
+		.scheme-block__img
+			top: 10%
+			left: 0%
+		.scheme-block__arrow
+			top: 130px
+			right: -3%
+			+lg
+				width: 200px
+	&.share
+		margin-top: 42px
+		margin-bottom: 238px
+		+lg
+			margin-top: 21px
+			margin-bottom: 235px
+		.scheme-block__img
+			bottom: 54%
+			right: 100%
+		.scheme-block__arrow
+			right: 210px
+			top: 30%
+			transform: translateY(-50%)
+			+lg
+				top: 53%
+				width: 180px
+				right: 180px
+	&.referall
+		margin-right: 420px
+		+lg
+			margin-right: 310px
+		.scheme-block__img
+			top: 90%
+			right: -115px
+		.scheme-block__arrow	
+			top: 206px
+			left: 105%
+			+lg
+				width: 190px
+	&.graph
+		display: block
+		padding-left: 473px
+		margin-bottom: 258px
+		+lg
+			padding-left: 440px
+		.scheme-block__img
+			top: -80px
+			left: 34%

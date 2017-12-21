@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('fonts/iconfont.eot');
+  src: url('fonts/iconfont.eot?#iefix') format('eot'),
+    url('fonts/iconfont.woff2') format('woff2'),
+    url('fonts/iconfont.woff') format('woff'),
+    url('fonts/iconfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$icon-arrow-d: "\EA01";
+$icon-arrow-d2: "\EA02";
+$icon-btc: "\EA03";
+$icon-check: "\EA04";
+$icon-eth: "\EA05";
+$icon-facebook: "\EA06";
+$icon-ltc: "\EA07";
+$icon-xmr: "\EA08";
+
+
+%icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  @extend %icon;
+  display: inline-block;
+}
+
+.icon-arrow-d:before { content: $icon-arrow-d; }
+.icon-arrow-d2:before { content: $icon-arrow-d2; }
+.icon-btc:before { content: $icon-btc; }
+.icon-check:before { content: $icon-check; }
+.icon-eth:before { content: $icon-eth; }
+.icon-facebook:before { content: $icon-facebook; }
+.icon-ltc:before { content: $icon-ltc; }
+.icon-xmr:before { content: $icon-xmr; }

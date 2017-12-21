@@ -1,0 +1,70 @@
+.faq-page
+	padding-top: 38px
+	+m
+		padding-top: 20px
+	&__title
+		margin-bottom: 26px
+		font-size: 32px
+		+m
+			margin-bottom: 15px
+.drop-section
+	margin-bottom: 50px
+	+m
+		margin-bottom: 20px
+	&__title
+		margin-bottom: 33px
+		font-size: 18px
+		+rob
+		font-weight: 700
+		text-align: center
+		+m
+			margin-bottom: 15px
+	&--mb-big
+		margin-bottom: 60px
+		+m
+			margin-bottom: 40px
+.drop-block 
+	position: relative
+	margin-bottom: 40px
+	+m
+		margin-bottom: 20px
+	&__title
+		+nosel
+		padding: 8px 35px  9px 20px
+		background: $blue
+		color: $white
+		cursor: pointer
+		font-size: 18px
+		+m
+			font-size: 16px
+		span
+			position: relative
+			display: inline-block
+			vertical-align: top
+	&__icon
+		+trans
+		right: -20px
+		position: absolute
+		top: 11px
+		display: block
+		font-size: 0
+		transform-origin: 50% 50%
+		+m
+			top: 8px
+		svg
+			font-size: 6px
+			fill: $white
+	&__content
+		background: $white
+		border-left: 10px solid $blue
+		border-right: 10px solid $blue
+		border-bottom: 10px solid $blue
+		padding: 15px 10px 18px
+		display: none
+		+m
+			border-left: 4px solid $blue
+			border-right: 4px solid $blue
+			border-bottom: 4px solid $blue
+	&.is-open
+		.drop-block__icon
+			transform: rotateX(180deg)

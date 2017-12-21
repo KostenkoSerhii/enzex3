@@ -1,0 +1,28 @@
+	<!--begin inv-plans-->
+	{% if parallax == true %}
+	<div class="inv-plans {{investBgMob}} js-parallax" data-parallax-img="img/inv-plan-bg.jpg" >
+		{% else %}
+		<div class="inv-plans {{investBgMob}}">
+			{% endif %}
+		<!--begin l-->
+		<div class="l">
+			<h2 class="inv-plans__title title  {% if investTitleWhite == true %}title--white{% endif %}">Investment Plans</h2>
+			<!--begin inv-plans__inner-->
+			<div class="inv-plans__inner">
+				{% for test in plans %}
+				<div class="plan-block {{test.class}}">
+					<div class="plan-block__topline {{test.toplinemod}}">{{test.topline}}</div>
+					<p class="plan-block__perc">{{test.perc}}</p>
+					<p class="plan-block__after-perc">{{test.aftperc}}</p>
+					<p class="plan-block__hourly">{{test.hourly}}</p>
+					<p class="plan-block__min">{{test.min | safe}}</p>
+					<p class="plan-block__max">{{test.max | safe}}</p>
+					<p class="plan-block__bottom-text">{{test.bottext}}</p>
+				</div>
+				{% endfor %}
+			</div>
+			<!--end inv-plans__inner-->
+		</div>
+		<!--end l-->
+	</div>
+	<!--end inv-plans-->

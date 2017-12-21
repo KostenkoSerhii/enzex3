@@ -1,0 +1,53 @@
+.referral-page
+	padding-top: 38px
+	border-bottom: 1px solid rgba($blue, 0.2)
+	+m
+		padding-top: 25px
+		padding-bottom: 25px
+	&__title
+		margin-bottom: 33px
+		+m
+			margin-bottom: 20px
+.reftwo-col
+	display: flex
+	min-height: 430px
+	+m
+		min-height: auto
+		flex-wrap: wrap
+	&__img
+		flex-basis: 500px
+		position: relative
+		+m
+			flex-basis: 100%
+			order: 1
+			text-align: center
+		img
+			position: absolute
+			top: -56px
+			left: 0
+			+m
+				position: static
+				max-width: 200px
+				height: auto
+	&__descr
+		flex-basis: 670px
+		+m
+			flex-basis: 100%
+			margin-bottom: 20px
+			order: 0
+.text-block
+	border: 10px solid $blue
+	max-width: 670px
+	width: 100%
+	text-align: left
+	+cover
+	padding: 10px 20px 21px
+	+m
+		max-width: 100%
+		padding: 5px 10px 10px
+		border: 4px solid $blue
+	p
+		margin-bottom: 28px
+		line-height: 1.6
+		&:last-of-type
+			margin-bottom: 0
