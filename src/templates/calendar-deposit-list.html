@@ -1,0 +1,48 @@
+---
+title: cabinet page
+outClass: ''
+btnLogText: 'Logout'
+btnDasboardText: 'Dashboard'
+contentPart: 'partials/cabinet/_deposit-list.html'
+mainTitle: 'Deposit List'
+depos: [
+{
+	topBold: '110% AFTER 7 DAYS',
+	toptext: '(No deposits for this plan)'
+},
+{
+	topBold: '5% DAILY FOR 30 DAYS',
+	toptext: '(No deposits for this plan)'
+},
+{
+	topBold: '4% DAILY FOR 45 DAYS',
+	toptext: '(No deposits for this plan)',
+	deposClass: 'depos-item--mb-non'
+}
+]
+deposPart: [
+{
+title: 'Plan',
+text: 'Plan 1',
+partClass: 'depos-item__part--text-left'
+},
+{
+title: 'Amount Spent (BTC)',
+text: '1-10.0000',
+partClass: ''
+},
+{
+title: 'Profit (%)',
+text: '110',
+partClass: ''
+}
+]
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "partials/_header.html" %}
+{% include "partials/cabinet/_cab-template.html" %}
+{% include "partials/_footer.html" %}
+{% endblock %}

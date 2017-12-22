@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>investment page</title>
+    <title>cabinet page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -50,7 +50,7 @@
 </i></i>XMR: $ 178.88</span> </div>
                 <!--end header__price-->
                 <!--begin header__btns-->
-                <div class="header__btns"> <button class="btn btn--blue js-popup-link" type="button" data-target="popup-login">Login</button> <button class="btn btn--red js-popup-link" type="button" data-target="popup-reg">Register</button> </div>
+                <div class="header__btns"> <button class="btn btn--blue js-popup-link" type="button" data-target="popup-login">Logout</button> <button class="btn btn--red js-popup-link" type="button" data-target="popup-reg">Dashboard</button> </div>
                 <!--end header__btns-->
               </div>
               <!--end header__main-content-->
@@ -80,67 +80,70 @@
         </div>
         <!--end header__wrapper-->
       </header>
-      <!--begin content-wrapper-->
-      <div class="content-wrapper" style="background-image: url('img/bg-texture-full.jpg');">
+      <div class="content-wrapper  cab-page" style="background-image: url('img/bg-texture-full.jpg');">
         <!--begin container-->
-        <div class="container">
-          <!--begin inv-plans-->
-          <div class="inv-plans ">
-            <!--begin l-->
-            <div class="l">
-              <h2 class="inv-plans__title title  ">Investment Plans</h2>
-              <!--begin inv-plans__inner-->
-              <div class="inv-plans__inner">
-                <div class="plan-block ">
-                  <div class="plan-block__topline ">STARTER</div>
-                  <p class="plan-block__perc">3.6%</p>
-                  <p class="plan-block__after-perc">Dialy</p>
-                  <p class="plan-block__hourly">0.15% Hourly</p>
-                  <p class="plan-block__min">Min: <strong>0.005</strong></p>
-                  <p class="plan-block__max">Max: <strong>10.00</strong></p>
-                  <p class="plan-block__bottom-text">Instant withdrawal</p>
+        <div class="container container--pt-36 ">
+          <!--begin l-->
+          <div class="l">
+            <h1 class="title title--mb-md">Account overview</h1>
+            <!--begin cab-page__inner-->
+            <div class="cab-page__inner">
+              <!--begin cab-page__nav-->
+              <nav class="cab-page__nav"> <a class="is-active" href="#"><span>Account Overview</span></a> <a href="#"><span>Make Deposit</span></a> <a href="#"><span>Withdraw Fund</span></a> <a href="#"><span>Deposit List</span></a> <a href="#"><span>Deposit History</span></a>
+                <a
+                  href="#"><span>Earning History</span></a> <a href="#"><span>Referral</span></a> <a href="#"><span>Account Setting</span></a> <a href="#"><span>Security Setting</span></a> </nav>
+              <!--end cab-page__nav-->
+              <!--begin cab-content-->
+              <div class="cab-page__content ">
+                <!--begin cab-content-->
+                <div class="cab-content">
+                  <div class="cab-content__top-info-line"> <span>Username: <strong>Terminator228</strong></span> <span>Registration date: <strong>Dec-11-2017</strong></span> <span>Last visit: <strong>Dec-11-2017</strong></span> </div>
+                  <!--begin cabtwo-col-->
+                  <div class="cabtwo-col">
+                    <div class="cabtwo-col__left">
+                      <div class="cab-content__title-block cab-content__title-block--bg-l">ACCOUNT BALANCE</div>
+                      <p class="cab-content__text-big">4.456220000 BTC</p>
+                    </div>
+                    <div class="cabtwo-col__right">
+                      <div class="cab-content__title-block">EARNING TOTAL</div>
+                      <p class="cab-content__text-big">6.436780000 BTC</p>
+                    </div>
+                  </div>
+                  <!--end cabtwo-col-->
+                  <!--begin cab-content__block-->
+                  <div class="cab-content__block cab-content__block--mb">
+                    <!--begin cabtwo-col-btn-->
+                    <div class="cabtwo-col-btn">
+                      <div class="cabtwo-col-btn__left">
+                        <div class="cab-content__title-block">DEPOSIT</div>
+                        <p class="cab-content__justify"> <span>Total: <strong>2.0234153000 BTC</strong></span> <span>Active: <strong>2.0234153000 BTC</strong></span> <span>Last: <strong>2.0234153000 BTC</strong></span> </p>
+                      </div>
+                      <div class="cabtwo-col-btn__right"> <button class="btn btn--sm-it btn--red  ">Deposit now</button> </div>
+                    </div>
+                    <!--end cabtwo-col-btn-->
+                  </div>
+                  <!--end cab-content__block-->
+                  <!--begin cab-content__block-->
+                  <div class="cab-content__block">
+                    <!--begin cabtwo-col-btn-->
+                    <div class="cabtwo-col-btn">
+                      <div class="cabtwo-col-btn__left">
+                        <div class="cab-content__title-block">WITHDRAW</div>
+                        <p class="cab-content__justify"> <span>Total: <strong>2.0234153000 BTC</strong></span> <span>Pending: <strong>2.0234153000 BTC</strong></span> <span>Last: <strong>2.0234153000 BTC</strong></span> </p>
+                      </div>
+                      <div class="cabtwo-col-btn__right"> <button class="btn btn--sm-it btn--red ">Withdraw now</button> </div>
+                    </div>
+                    <!--end cabtwo-col-btn-->
+                  </div>
+                  <!--end cab-content__block-->
                 </div>
-                <div class="plan-block ">
-                  <div class="plan-block__topline ">MEDIUM</div>
-                  <p class="plan-block__perc">4.08%</p>
-                  <p class="plan-block__after-perc">Dialy</p>
-                  <p class="plan-block__hourly">0.17% Hourly</p>
-                  <p class="plan-block__min">Min: <strong>10.005</strong></p>
-                  <p class="plan-block__max">Max: <strong>50.00</strong></p>
-                  <p class="plan-block__bottom-text">Instant withdrawal</p>
-                </div>
-                <div class="plan-block plan-block--last">
-                  <div class="plan-block__topline ">PREMIUM</div>
-                  <p class="plan-block__perc">5.04%</p>
-                  <p class="plan-block__after-perc">Dialy</p>
-                  <p class="plan-block__hourly">0.21% Hourly</p>
-                  <p class="plan-block__min">Min: <strong>50.005</strong></p>
-                  <p class="plan-block__max">Max: <strong>100.00</strong></p>
-                  <p class="plan-block__bottom-text">Instant withdrawal</p>
-                </div>
+                <!--end cab-content-->
               </div>
-              <!--end inv-plans__inner-->
+              <!--end cab-page__content-->
             </div>
-            <!--end l-->
+            <!--end cab-page__inner-->
           </div>
-          <!--end inv-plans-->
-          <!--begin calc-block-->
-          <div class="calc-block">
-            <div class="l">
-              <h2 class="calc-block__title title">Calculate your profit</h2>
-              <div class="calc-wrapper">
-                <div class="field field--sm">
-                  <p class="field__title">Amount (BTC)</p> <input type="text" value="1"> </div>
-                <div class="field ">
-                  <p class="field__title">Daily profit</p> <input type="text" value="0.03600000"> </div>
-                <div class="field ">
-                  <p class="field__title">Weekly profit</p> <input type="text" value="0.25200000"> </div>
-                <div class="field ">
-                  <p class="field__title">Monthly profit</p> <input type="text" value="1.08000000"> </div>
-              </div>
-            </div>
-          </div>
-          <!--end calc-block-->
+          <!--end l-->
         </div>
         <!--end container-->
       </div>

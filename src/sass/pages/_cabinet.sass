@@ -1,16 +1,21 @@
 .cab-page
 	&__inner
-		+clr
+		display: flex
+		+m
+			display: block
 	&__nav
-		float: left
-		width: 200px
+		// float: left
+		flex-basis: 200px
+		flex-grow: 0
 		padding-top: 11px
+		flex-shrink: 0
 		+lg
-			width: 180px
+			// width: 180px
+			flex-basis: 180px
 		+m
 			padding-top: 0
-			float: none
-			width: 100%
+			// float: none
+			// width: 100%
 			text-align: center
 			margin-bottom: 10px
 		a
@@ -48,17 +53,20 @@
 				border-bottom: 1px dashed rgba($blue, 0.4)
 				+trans
 	&__content
-		float: right
-		width: calc(100% - 200px)
+		flex-grow: 1
+		// float: right
+
+		// width: calc(100% - 200px)
 		+lg
-			width: calc(100% - 180px)
+			// width: calc(100% - 180px)
 		+m
-			float: none
-			width: 100%
+			// float: none
+			// width: 100%
 .cab-content
 	background: $white
 	border: 10px solid $blue
 	padding: 20px 30px
+	height: 100%
 	+m
 		border: 4px solid $blue
 		padding: 8px 12px 14px
@@ -88,16 +96,28 @@
 		line-height: 1.1
 		margin-bottom: 10px
 		letter-spacing: 2.5px
+		display: inline-block
+		vertical-align: top
+		width: 100%
 		+m
 			font-size: 18px
 			text-align: left
+			display: block
 		&--bg-l
 			background: $blue1
+		&--min-half-width
+			width: auto
+			min-width: 50%
+			+m
+				min-width: auto
+				width: 100%
 	&__text-big
 		font-size: 32px
 		line-height: 1.1
 		font-weight: 700
 		+rob
+		&--mb
+			margin-bottom: 30px
 		+m
 			font-size: 20px
 	&__block
@@ -108,16 +128,51 @@
 	&__justify
 		display: flex
 		justify-content: space-between
+		max-width: 1102px
 		+lg
 			font-size: 14px
 		+m
 			display: block
 			text-align: center
-		span
+		&>span
 			+m
 				display: inline-block
 				vertical-align: top
 				margin: 10px
+		&-item
+			text-align: left
+			padding-right: 5px
+			flex-basis: 20%
+			flex-grow: 0
+			word-wrap: break-word
+
+			+m
+				max-width: 100%
+				padding-right: 0
+			p
+				// word-wrap: break-word
+				// white-space: pre-line
+				word-break: break-all
+				+m
+					display: inline-block
+					margin-bottom: 10px
+					vertical-align: top
+				&.mb
+					+m
+						margin-right: 10px
+			&--long
+				flex-basis: 40%
+				// max-width: 40%
+	&__centered-text-bold
+		+rob
+		font-weight: 700
+		margin-bottom: 22px
+		text-align: center
+	&__centered
+		text-align: center
+		margin-bottom: 34px
+		+m
+			margin-bottom: 25px
 .cabtwo-col
 	+clr
 	margin-bottom: 55px
@@ -156,4 +211,81 @@
 			float: none
 			width: 100%
 			text-align: center
+.cab-plans
+	display: flex
+	justify-content: space-between
+	margin-bottom: 32px
+	+m
+		display: block
+		margin-bottom: 25px
+	.plan-block
+		margin-right: 0
+		flex-basis: 230px
+		+m
+			margin-left: auto
+			margin-right: auto
+		&__bottom-text
+			margin-bottom: 18px
+		&--l
+			border: 1px solid $blue1
+		&--m
+			border: 1px solid $blue2
+		&--d
+			border: 1px solid $blue
+.depos-list
+.depos-item
+	margin-bottom: 43px
+	+m
+		margin-bottom: 25px
 
+	&--mb-non
+		margin-bottom: 0
+	&__topline
+		margin-bottom: 20px
+		strong
+			display: inline-block
+			vertical-align: top
+			font-size: 24px
+			margin-right: 19px
+			+m
+				font-size: 16px
+		span
+			font-size: 15px
+			display: inline-block
+			vertical-align: bottom
+			padding-bottom: 5px
+			+m
+				font-size: 14px
+	&__inner
+		display: flex
+		justify-content: space-between
+		+xs
+			display: block
+	&__part
+		flex-basis: 33.33333%
+		text-align: center
+		+xs
+			margin-bottom: 25px
+		&--text-left
+			text-align: left
+			+xs
+				text-align: center
+			.depos-item__part-option
+				padding-left: 16px
+				+xs
+					padding-left: 0
+	&__part-option
+		background: $bg-blue
+		padding-top: 2px 
+		padding-bottom: 2px
+		margin-bottom: 9px
+		+m
+			margin-bottom: 5px
+	&__part-value
+		font-size: 20px
+		padding-right: 5px
+		+rob
+		+m
+			font-size: 14px
+		+xs
+			padding-right: 0

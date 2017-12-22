@@ -1,0 +1,54 @@
+---
+title: cabinet page
+outClass: ''
+btnLogText: 'Logout'
+btnDasboardText: 'Dashboard'
+contentPart: 'partials/cabinet/_deposit.html'
+mainTitle: 'Make Deposit'
+isCabinet: true
+plans: [
+{
+	topline: 'STARTER',
+	toplinemod: 'plan-block__topline--l',
+	perc: '3.6%',
+	aftperc: 'Dialy',
+	hourly: '0.15% Hourly',
+	min: 'Min: <strong>0.005</strong>',
+	max: 'Max: <strong>10.00</strong>',
+	bottext: 'Instant  withdrawal',
+	class: 'plan-block--l',
+	radio: 'radio1'
+},
+{
+	topline: 'MEDIUM',
+	toplinemod: 'plan-block__topline--m',
+	perc: '4.08%',
+	aftperc: 'Dialy',
+	hourly: '0.17% Hourly',
+	min: 'Min: <strong>10.005</strong>',
+	max: 'Max: <strong>50.00</strong>',
+	bottext: 'Instant  withdrawal',
+	class: 'plan-block--m',
+	radio: 'radio2'
+},
+{
+	topline: 'PREMIUM',
+	toplinemod: 'plan-block__topline--d',
+	perc: '5.04%',
+	aftperc: 'Dialy',
+	hourly: '0.21% Hourly',
+	min: 'Min: <strong>50.005</strong>',
+	max: 'Max: <strong>100.00</strong>',
+	bottext: 'Instant  withdrawal',
+	class: 'plan-block--d',
+	radio: 'radio3'
+}
+]
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "partials/_header.html" %}
+{% include "partials/cabinet/_cab-template.html" %}
+{% include "partials/_footer.html" %}
+{% endblock %}

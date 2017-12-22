@@ -36,6 +36,7 @@
 	&__title
 		font-size: 18px
 		margin-bottom: 5px
+		text-align: left
 	textarea, input
 		display: block
 		padding: 11px 15px
@@ -84,8 +85,49 @@
 		&:checked + label
 			svg
 				opacity: 1
+.radio
+	display: inline-block
+	vertical-align: top
+	input
+		display: none
+		&:checked + label
+			i
+				&:after
+					opacity: 1
+	label
+		cursor: pointer
+		position: relative
+		padding-left: 29px
+		font-size: 18px
+		+m
+			font-size: 14px
+			padding-left: 24px
+	&__icon
+		position: absolute
+		left: 0
+		top: 1px
+		border-radius: 50%
+		width: 20px
+		height: 20px
+		background-color: $white
+		box-shadow: inset 0 0 4.6px 0.4px rgba(0, 0, 0, 0.4)
+		+m
+			top: -0px
+			width: 16px
+			height: 16px
+		&:after
+			content: ''
+			+vcenter
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background: $blue
+			opacity: 0
+			+trans
+			+m
+				width: 8px
+				height: 8px
 .form
-
 	&__text
 		+rob
 		line-height: 1.6

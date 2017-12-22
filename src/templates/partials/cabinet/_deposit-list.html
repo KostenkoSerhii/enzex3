@@ -1,0 +1,38 @@
+<!--begin cab-content-->
+<div class="cab-content">
+	<!--begin depos-list-->
+	<div class="depos-list">
+		{% for test in depos %}
+		<!--begin depos-item-->
+		<div class="depos-item {{test.deposClass}}">
+			<div class="depos-item__topline">
+				<strong>{{test.topBold}}</strong>
+				<span>{{test.toptext}}</span>
+			</div>
+			<!--begin depos-item__inner-->
+			<div class="depos-item__inner">
+				{% for test2 in deposPart %}
+				<!--begin depos-item__part-->
+				<div class="depos-item__part {{test2.partClass}}">
+					<div class="depos-item__part-option ">
+						{{test2.title}}
+					</div>
+					<p class="depos-item__part-value">
+						{{test2.text}}
+					</p>
+				</div>
+				<!--end depos-item__part-->
+				{% endfor %}
+			</div>
+			<!--end depos-item__inner-->
+		</div>
+		<!--end depos-item-->
+		{% endfor %}
+	</div>
+	<!--end depos-list-->
+
+
+
+
+</div>
+<!--end cab-content-->

@@ -1,0 +1,15 @@
+---
+title: cabinet page
+outClass: ''
+btnLogText: 'Logout'
+btnDasboardText: 'Dashboard'
+contentPart: 'partials/cabinet/_overview.html'
+mainTitle: 'Account overview'
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "partials/_header.html" %}
+{% include "partials/cabinet/_cab-template.html" %}
+{% include "partials/_footer.html" %}
+{% endblock %}
