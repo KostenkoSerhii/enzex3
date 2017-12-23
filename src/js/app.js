@@ -2,6 +2,7 @@ import sayHello from './lib/sayHello.js';
 // import Parallax from 'parallax-js';
 // import Parallax from 'parallax-js/dist/parallax.min.js';
 import parallax from 'jquery-parallax.js';
+import svgUseIt from 'svg-use-it';
 
 import {isResp991, } from './components/global.js';
 import  './clickEvents.js';
@@ -14,7 +15,8 @@ import HowItWorkAnim from './components/howItWork-anim.js';
 sayHello();
 
 $(document).ready(function() {
-	
+  svgUseIt();
+  
   new Select({
     selector: '.js-select',
     cssClass: 'select-custom'
