@@ -1,0 +1,34 @@
+---
+title: cabinet page
+outClass: ''
+btnLogText: 'Logout'
+btnDasboardText: 'Dashboard'
+contentPart: 'partials/cabinet/_deposit-history.html'
+mainTitle: 'Earning History'
+
+deposPart: [
+{
+title: 'Type',
+text: 'Lorem ipsum',
+partClass: 'justify-spec__part--text-left'
+},
+{
+title: 'Amount Spent (BTC)',
+text: '1.23450000',
+partClass: ''
+},
+{
+title: 'Date',
+text: 'Dec-03-2017',
+partClass: ''
+}
+]
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "partials/_header.html" %}
+{% include "partials/cabinet/_cab-template.html" %}
+{% include "partials/_footer.html" %}
+{% endblock %}

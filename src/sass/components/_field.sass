@@ -127,7 +127,20 @@
 			+m
 				width: 8px
 				height: 8px
+	&--mb
+		margin-bottom: 10px
 .form
+	&__two-col
+		font-size: 0
+		.field
+			padding-right: 15px
+			+m
+				padding-right: 0
+			&:nth-of-type(2n)
+				padding-left: 15px
+				padding-right: 0
+				+m
+					padding-left: 0
 	&__text
 		+rob
 		line-height: 1.6
@@ -136,3 +149,7 @@
 		margin-bottom: 50px
 		+m
 			margin-bottom: 25px
+	&__block
+		margin-bottom: 50px
+		+m
+			margin-bottom: 20px

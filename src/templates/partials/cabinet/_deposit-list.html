@@ -9,22 +9,22 @@
 				<strong>{{test.topBold}}</strong>
 				<span>{{test.toptext}}</span>
 			</div>
-			<!--begin depos-item__inner-->
-			<div class="depos-item__inner">
+			<!--begin justify-spec-->
+			<div class="justify-spec">
 				{% for test2 in deposPart %}
 				<!--begin depos-item__part-->
-				<div class="depos-item__part {{test2.partClass}}">
-					<div class="depos-item__part-option ">
+				<div class="justify-spec__part {{test2.partClass}}">
+					<div class="justify-spec__part-option ">
 						{{test2.title}}
 					</div>
-					<p class="depos-item__part-value">
+					<p class="justify-spec__part-value">
 						{{test2.text}}
 					</p>
 				</div>
 				<!--end depos-item__part-->
 				{% endfor %}
 			</div>
-			<!--end depos-item__inner-->
+			<!--end justify-spec-->
 		</div>
 		<!--end depos-item-->
 		{% endfor %}

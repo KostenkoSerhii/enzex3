@@ -80,13 +80,12 @@
         </div>
         <!--end header__wrapper-->
       </header>
-      <!--begin content-wrapper-->
       <div class="content-wrapper  cab-page" style="background-image: url('img/bg-texture-full.jpg');">
         <!--begin container-->
         <div class="container container--pt-36 ">
           <!--begin l-->
           <div class="l">
-            <h1 class="title title--mb-md">Account overview</h1>
+            <h1 class="title title--mb-md">Security Setting</h1>
             <!--begin cab-page__inner-->
             <div class="cab-page__inner">
               <!--begin cab-page__nav-->
@@ -98,45 +97,53 @@
               <div class="cab-page__content ">
                 <!--begin cab-content-->
                 <div class="cab-content">
-                  <div class="cab-content__top-info-line"> <span>Username: <strong>Terminator228</strong></span> <span>Registration date: <strong>Dec-11-2017</strong></span> <span>Last visit: <strong>Dec-11-2017</strong></span> </div>
-                  <!--begin cabtwo-col-->
-                  <div class="cabtwo-col">
-                    <div class="cabtwo-col__left">
-                      <div class="cab-content__title-block cab-content__title-block--bg-l">ACCOUNT BALANCE</div>
-                      <p class="cab-content__text-big">4.456220000 BTC</p>
-                    </div>
-                    <div class="cabtwo-col__right">
-                      <div class="cab-content__title-block">EARNING TOTAL</div>
-                      <p class="cab-content__text-big">6.436780000 BTC</p>
-                    </div>
-                  </div>
-                  <!--end cabtwo-col-->
-                  <!--begin cab-content__block-->
-                  <div class="cab-content__block cab-content__block--mb">
-                    <!--begin cabtwo-col-btn-->
-                    <div class="cabtwo-col-btn">
-                      <div class="cabtwo-col-btn__left">
-                        <div class="cab-content__title-block">DEPOSIT</div>
-                        <p class="cab-content__justify"> <span>Total: <strong>2.0234153000 BTC</strong></span> <span>Active: <strong>2.0234153000 BTC</strong></span> <span>Last: <strong>2.0234153000 BTC</strong></span> </p>
+                  <div class="form">
+                    <form action="">
+                      <!--begin form__block-->
+                      <div class="form__block">
+                        <div class="cab-content__title-block  cab-content__title-block--mb-m">Detect IP Address Change Sensitivity </div>
+                        <!--begin radio-line-->
+                        <div class="radio-line">
+                          <div class="radio radio--mb"> <input name="radio" id="1" type="radio"> <label for="1">
+							<i class="radio__icon"></i>
+							Disabled
+						</label> </div>
+                          <div class="radio radio--mb"> <input name="radio" id="2" type="radio"> <label for="2">
+							<i class="radio__icon"></i>
+							Medium
+						</label> </div>
+                          <div class="radio radio--mb"> <input name="radio" id="3" type="radio"> <label for="3">
+							<i class="radio__icon"></i>
+							High
+						</label> </div>
+                          <div class="radio radio--mb"> <input name="radio" id="8" type="radio"> <label for="8">
+							<i class="radio__icon"></i>
+							Paranoic
+						</label> </div>
+                        </div>
+                        <!--end radio-line-->
                       </div>
-                      <div class="cabtwo-col-btn__right"> <button class="btn btn--sm-it btn--red  ">Deposit now</button> </div>
-                    </div>
-                    <!--end cabtwo-col-btn-->
-                  </div>
-                  <!--end cab-content__block-->
-                  <!--begin cab-content__block-->
-                  <div class="cab-content__block">
-                    <!--begin cabtwo-col-btn-->
-                    <div class="cabtwo-col-btn">
-                      <div class="cabtwo-col-btn__left">
-                        <div class="cab-content__title-block">WITHDRAW</div>
-                        <p class="cab-content__justify"> <span>Total: <strong>2.0234153000 BTC</strong></span> <span>Pending: <strong>2.0234153000 BTC</strong></span> <span>Last: <strong>2.0234153000 BTC</strong></span> </p>
+                      <!--end form__block-->
+                      <!--begin form__block-->
+                      <div class="form__block">
+                        <div class="cab-content__title-block  cab-content__title-block--mb-m ">Detect Browser Change </div>
+                        <!--begin radio-line-->
+                        <div class="radio-line">
+                          <div class="radio radio--mb"> <input name="radio2" id="4" type="radio"> <label for="4">
+							<i class="radio__icon"></i>
+							Disabled
+						</label> </div>
+                          <div class="radio radio--mb"> <input name="radio2" id="5" type="radio"> <label for="5">
+							<i class="radio__icon"></i>
+							Enabled
+						</label> </div>
+                        </div>
+                        <!--end radio-line-->
                       </div>
-                      <div class="cabtwo-col-btn__right"> <button class="btn btn--sm-it btn--red ">Withdraw now</button> </div>
-                    </div>
-                    <!--end cabtwo-col-btn-->
+                      <!--end form__block-->
+                      <div class="centered"> <button class="btn btn--red btn--i ">Set</button> </div>
+                    </form>
                   </div>
-                  <!--end cab-content__block-->
                 </div>
                 <!--end cab-content-->
               </div>
@@ -242,8 +249,8 @@
           <p class="popup__title popup__title--bold">Register new account</p>
           <div class="form">
             <form action="">
-              <!--begin popup__two-col-->
-              <div class="popup__two-col">
+              <!--begin form__two-col-->
+              <div class="form__two-col">
                 <div class="field field--half">
                   <p class="field__title">Full name</p> <input type="text" value="John Connor"> </div>
                 <div class="field field--half">
@@ -261,7 +268,7 @@
                 <div class="field field--half">
                   <p class="field__title">Upline</p> <input type="text" value="Upline"> </div>
               </div>
-              <!--end popup__two-col-->
+              <!--end form__two-col-->
               <div class="popup__centered popup__centered--mb">
                 <div class="check"> <input type="checkbox" id="check"> <label for="check">
 								<i class="check__icon">

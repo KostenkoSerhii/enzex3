@@ -1,0 +1,158 @@
+<!--begin cab-content-->
+<div class="cab-content">
+	<!--begin depos-list-->
+	<!--begin select-line-->
+	<div class="select-line">
+		<!--begin select-line__left-->
+		<div class="select-line__left">
+			<span class="select-line__title">From:</span>
+			<select  class="js-select">
+				<option value="" >Dec</option>
+				<option value="" >Sep</option>
+				<option value="" >Oct</option>
+				<option value="" >Jun</option>
+			</select>
+			<select  class="js-select">
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >4</option>
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >4</option>
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >4</option>
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >4</option>
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >4</option>
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >4</option>
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >31</option>
+			</select>
+			<select  class="js-select-big">
+				<option value="" >2014</option>
+				<option value="" >2015</option>
+				<option value="" >2016</option>
+				<option value="" >2017</option>
+			</select>
+		</div>
+		<!--end select-line__left-->
+		<!--begin select-line__right-->
+		<div class="select-line__right select-line__right--text-t">
+			<span class="select-line__title">To:</span>
+			<select  class="js-select">
+				<option value="" >Dec</option>
+				<option value="" >Sep</option>
+				<option value="" >Oct</option>
+				<option value="" >Jun</option>
+			</select>
+			<select  class="js-select">
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >4</option>
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >4</option>
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >4</option>
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >4</option>
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >4</option>
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >4</option>
+				<option value="" >1</option>
+				<option value="" >2</option>
+				<option value="" >3</option>
+				<option value="" >31</option>
+			</select>
+			<select  class="js-select-big">
+				<option value="" >2014</option>
+				<option value="" >2015</option>
+				<option value="" >2016</option>
+				<option value="" >2017</option>
+			</select>
+		</div>
+		<!--end select-line__right-->
+
+		
+	</div>
+	<!--end select-line-->
+
+
+
+	<!--begin justify-spec-->
+	<div class="justify-spec justify-spec--mb">
+		{% for test2 in deposPart %}
+		<!--begin depos-item__part-->
+		<div class="justify-spec__part {{test2.partClass}}">
+			<div class="justify-spec__part-option ">
+				{{test2.title}}
+			</div>
+			<p class="justify-spec__part-value">
+				{{test2.text}}
+			</p>
+		</div>
+		<!--end depos-item__part-->
+		{% endfor %}
+	</div>
+	<!--end justify-spec-->
+	<!--begin justify-spec-->
+	<div class="justify-spec justify-spec--mb">
+		{% for test2 in deposPart %}
+		<!--begin depos-item__part-->
+		<div class="justify-spec__part {{test2.partClass}}">
+			<div class="justify-spec__part-option ">
+				{{test2.title}}
+			</div>
+			<p class="justify-spec__part-value">
+				{{test2.text}}
+			</p>
+		</div>
+		<!--end depos-item__part-->
+		{% endfor %}
+	</div>
+	<!--end justify-spec-->
+	<!--begin justify-spec-->
+	<div class="justify-spec justify-spec--mb-big">
+		{% for test2 in deposPart %}
+		<!--begin depos-item__part-->
+		<div class="justify-spec__part {{test2.partClass}}">
+			<div class="justify-spec__part-option ">
+				{{test2.title}}
+			</div>
+			<p class="justify-spec__part-value">
+				{{test2.text}}
+			</p>
+		</div>
+		<!--end depos-item__part-->
+		{% endfor %}
+	</div>
+	<!--end justify-spec-->
+	<div class="big-text">TOTAL: 12.8472186000 BTC</div>
+
+</div>
+<!--end cab-content-->

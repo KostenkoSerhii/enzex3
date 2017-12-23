@@ -27,7 +27,18 @@ PageList:
   ready: 50%
 - file: cabinet-withdraw.html
   ready: 50%
-- file: calendar-deposit-list.html
+- file: cabinet-deposit-list.html
   ready: 50%
+- file: cabinet-deposit-history.html
+  ready: 50%
+- file: cabinet-earning-history.html
+  ready: 50%
+- file: cabinet-referral.html
+  ready: 50%
+- file: cabinet-setting.html
+  ready: 50%
+- file: cabinet-security-setting.html
+  ready: 50%
+
 
   
