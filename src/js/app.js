@@ -6,7 +6,7 @@ import svgUseIt from 'svg-use-it';
 
 import {isResp991, } from './components/global.js';
 import  './clickEvents.js';
-import  './dropdown.js';
+// import  './dropdown.js';
 import Select from './components/select.js';
 import popupsInit from './components/popups.js';
 // import HowItWorkAnim from './components/howItWork-anim.js';

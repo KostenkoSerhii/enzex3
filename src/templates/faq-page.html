@@ -5,45 +5,55 @@ outClass: ''
 dropSection1: [
 {
 	title: 'What is EnzexBTC Limited?',
-	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.'
+	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.',
+	id: '1'
 },
 {
 	title: 'Which payment methods do you accept?',
-	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.'
+	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.',
+	id: '2'
 },
 {
 	title: 'Do you charge any fee for providing your investment services?',
-	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.'
+	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.',
+	id: '3'
 },
 {
 	title: 'Can I loose my investment?',
-	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.'
+	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.',
+	id: '4'
 },
 {
 	title: 'Are you protected from DDoS attacks?',
-	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.'
+	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.',
+	id: '5'
 }
 ]
 dropSection2: [
 {
 	title: 'Who can become an investor of the program?',
-	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.'
+	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.',
+	id: '6'
 },
 {
 	title: 'I`m having trouble logging into my account, What do I need to do now?',
-	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.'
+	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.',
+	id: '7'
 },
 {
 	title: 'Can I change my email address?',
-	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.'
+	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.',
+	id: '8'
 },
 {
 	title: 'Can I change my bitcoin address?',
-	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.'
+	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.',
+	id: '9'
 },
 {
 	title: 'May I open several accounts in your program?',
-	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.'
+	text: 'Enzex BTC Limited is cryptocurrency investment platform, Developed by professionals, to generate profit from Crypto-market.',
+	id: '10'
 }
 ]
 dropSection3: [
@@ -112,128 +122,50 @@ dropSection6: [
 {% block content %}
 {% include "partials/_header.html" %}
 <!--begin content-wrapper-->
-<div class="content-wrapper faq-page" style="background-image: url('img/bg-texture-full2.jpg');">
+<div class="content-wrapper faq-page" style="background-image: url('img/bg-texture-full2.jpg'); background-color: #e4f2f5;">
 	<!--begin l-->
 	<div class="l">
 		<h1 class="title faq-page__title">Frequently Asked Questions</h1>
 		<!--begin faq-page__wrapper-->
 		<div class="faq-page__wrapper">
+
 			<section class="drop-section">
 				<h2 class="drop-section__title">General questions</h2>
 				{% for test in dropSection1 %}
 				<!--begin drop-block-->
-				<div class="drop-block js-drop-block">
-					<div class="drop-block__title js-drop-block-title">
-						<span>{{test.title}}
-							<i class="drop-block__icon">{{mixins.icon('arrow-d')}}</i>
+				<div class="drop-block ">
+					<input class="drop-block__input" type="radio" id="{{test.id}}" name="faq-drop">
+					<label for="{{test.id}}">
+						<span class="drop-block__title ">
+							<span>{{test.title}}
+								<i class="drop-block__icon">{{mixins.icon('arrow-d')}}</i>
+							</span>
 						</span>
-						
-					</div>
-					<div class="drop-block__content js-drop-block-content">
-						<p>
+						<span class="drop-block__content ">
 							{{test.text}}
-						</p>
-					</div>
+						</span>
+					</label>
 				</div>
 				<!--end drop-block-->
 				{% endfor %}
 			</section>
+
 			<section class="drop-section">
 				<h2 class="drop-section__title">Account questions</h2>
 				{% for test in dropSection2 %}
 				<!--begin drop-block-->
-				<div class="drop-block js-drop-block">
-					<div class="drop-block__title js-drop-block-title">
-						<span>{{test.title}}
-							<i class="drop-block__icon">{{mixins.icon('arrow-d')}}</i>
+				<div class="drop-block ">
+					<input class="drop-block__input" type="radio" id="{{test.id}}" name="faq-drop">
+					<label for="{{test.id}}">
+						<span class="drop-block__title ">
+							<span>{{test.title}}
+								<i class="drop-block__icon">{{mixins.icon('arrow-d')}}</i>
+							</span>
 						</span>
-						
-					</div>
-					<div class="drop-block__content js-drop-block-content">
-						<p>
+						<span class="drop-block__content ">
 							{{test.text}}
-						</p>
-					</div>
-				</div>
-				<!--end drop-block-->
-				{% endfor %}
-			</section>
-			<section class="drop-section">
-				<h2 class="drop-section__title">Deposits questions</h2>
-				{% for test in dropSection3 %}
-				<!--begin drop-block-->
-				<div class="drop-block js-drop-block">
-					<div class="drop-block__title js-drop-block-title">
-						<span>{{test.title}}
-							<i class="drop-block__icon">{{mixins.icon('arrow-d')}}</i>
 						</span>
-						
-					</div>
-					<div class="drop-block__content js-drop-block-content">
-						<p>
-							{{test.text}}
-						</p>
-					</div>
-				</div>
-				<!--end drop-block-->
-				{% endfor %}
-			</section>
-			<section class="drop-section">
-				<h2 class="drop-section__title">Earnings questions</h2>
-				{% for test in dropSection4 %}
-				<!--begin drop-block-->
-				<div class="drop-block js-drop-block">
-					<div class="drop-block__title js-drop-block-title">
-						<span>{{test.title}}
-							<i class="drop-block__icon">{{mixins.icon('arrow-d')}}</i>
-						</span>
-						
-					</div>
-					<div class="drop-block__content js-drop-block-content">
-						<p>
-							{{test.text}}
-						</p>
-					</div>
-				</div>
-				<!--end drop-block-->
-				{% endfor %}
-			</section>
-			<section class="drop-section">
-				<h2 class="drop-section__title">Withdrawals questions</h2>
-				{% for test in dropSection5 %}
-				<!--begin drop-block-->
-				<div class="drop-block js-drop-block">
-					<div class="drop-block__title js-drop-block-title">
-						<span>{{test.title}}
-							<i class="drop-block__icon">{{mixins.icon('arrow-d')}}</i>
-						</span>
-						
-					</div>
-					<div class="drop-block__content js-drop-block-content">
-						<p>
-							{{test.text}}
-						</p>
-					</div>
-				</div>
-				<!--end drop-block-->
-				{% endfor %}
-			</section>
-			<section class="drop-section drop-section--mb-big">
-				<h2 class="drop-section__title">Partnership questions</h2>
-				{% for test in dropSection6 %}
-				<!--begin drop-block-->
-				<div class="drop-block js-drop-block">
-					<div class="drop-block__title js-drop-block-title">
-						<span>{{test.title}}
-							<i class="drop-block__icon">{{mixins.icon('arrow-d')}}</i>
-						</span>
-						
-					</div>
-					<div class="drop-block__content js-drop-block-content">
-						<p>
-							{{test.text}}
-						</p>
-					</div>
+					</label>
 				</div>
 				<!--end drop-block-->
 				{% endfor %}
