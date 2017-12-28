@@ -15,14 +15,69 @@
 		width: 950px
 	+m
 		width: 100%
+ @keyframes howItWorkAnim
+ 	from
+ 		opacity: 0
+ 	to
+ 		opacity: 1
+// @keyframes howItWorkAnim
+// 	9.09%
+// 		.scheme-block
+// 			opacity: 1	
+// 	18.18%
+
+// 	27.27%
+
+// 	36.36%
+
+// 	45.45%
+
+// 	54.54%
+
+// 	63.63%
+
+// 	72.72%
+
+// 	81.81%
+
+// 	90.9%
+
+// 	100%
+
+// =howItWorkAnim
+// 	animation-name: howItWorkAnim
+// 	animation-timing-function: linear
+// 	animation-delay: 2s
+// =howItWorkAnim
+	
+// 	transition: opacity 0.2s linear
+=howItWorkAnimStyle
+	animation-name: howItWorkAnim
+	animation-duration: 0.3s
+	animation-timing-function: linear
+	animation-fill-mode: forwards
+$account: 2s
+$accountArrow: 2.3s
+$deposit: 2.6s
+$depositArrow: 2.9s
+$profit: 3.2s
+$profitArrow: 3.6s
+$share: 3.9s
+$shareArrow: 4.2s
+$referral: 4.6s
+$referralArrow: 4.9s
+$graph: 5.2s
+
 .scheme-block
 	position: relative
 	font-size: 0
 	display: inline-block
 	vertical-align: top
-	// opacity: 0
-	// +lg
-	// 	opacity: 1
+	opacity: 0
+	+howItWorkAnimStyle
+	// +howItWorkAnim
+	+lg
+		opacity: 1
 	+m
 		display: block
 	&__text
@@ -46,9 +101,11 @@
 			position: static
 	&__arrow
 		position: absolute
-		// opacity: 0
-		// +lg
-		// 	opacity: 1
+		opacity: 0
+		// +howItWorkAnim
+		+howItWorkAnimStyle
+		+lg
+			opacity: 1
 		+m
 			display: none
 	&__mob-arrow
@@ -77,6 +134,7 @@
 		padding-left: 55px
 		margin-right: 338px
 		margin-bottom: 111px
+		animation-delay: $account
 		+lg
 			padding-left: 0
 			margin-right: 270px
@@ -85,6 +143,7 @@
 			top: 48%
 			left: 95%
 		.scheme-block__arrow
+			animation-delay: $accountArrow
 			top: 33%
 			transform: translateY(-50%)
 			left: 133%
@@ -92,12 +151,14 @@
 				width: 200px
 				top: 58%
 	&.deposit
+		animation-delay: $deposit
 		.scheme-block__img
 			left: 89%
 			top: 37%
 		.scheme-block__arrow
 			top: 50%
 			left: 256px
+			animation-delay: $depositArrow
 			+lg
 				width: 240px
 				left: 246px
@@ -106,6 +167,7 @@
 		margin-left: auto
 		text-align: right
 		margin-bottom: 90px
+		animation-delay: $profit
 		.scheme-block__inner
 			margin-right: 88px
 			+m
@@ -114,6 +176,7 @@
 			top: 10%
 			left: 0%
 		.scheme-block__arrow
+			animation-delay: $profitArrow
 			top: 130px
 			right: -3%
 			+lg
@@ -121,6 +184,7 @@
 	&.share
 		margin-top: 42px
 		margin-bottom: 238px
+		animation-delay: $share
 		+lg
 			margin-top: 21px
 			margin-bottom: 235px
@@ -128,6 +192,7 @@
 			bottom: 54%
 			right: 100%
 		.scheme-block__arrow
+			animation-delay: $shareArrow
 			right: 210px
 			top: 30%
 			transform: translateY(-50%)
@@ -137,12 +202,14 @@
 				right: 180px
 	&.referall
 		margin-right: 420px
+		animation-delay: $referral
 		+lg
 			margin-right: 310px
 		.scheme-block__img
 			top: 90%
 			right: -115px
 		.scheme-block__arrow	
+			animation-delay: $referralArrow
 			top: 206px
 			left: 105%
 			+lg
@@ -151,6 +218,7 @@
 		display: block
 		padding-left: 473px
 		margin-bottom: 258px
+		animation-delay: $graph
 		+lg
 			padding-left: 440px
 		.scheme-block__img
